@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Header/Header";
+import Navbar from "./Navbar/Navbar";
+import Pricing from "./Pricing/Pricing";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <h1 className="text-5xl mt-3">Welcome Tailwind React website</h1>
+      <Header></Header>
+      <Pricing></Pricing>
     </div>
   );
 }
